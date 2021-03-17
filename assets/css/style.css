@@ -135,6 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 .nav-menu {
   padding-top: 30px;
+  height: 550px;
 }
 
 .nav-menu * {
@@ -391,7 +392,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -1083,14 +1084,6 @@ section {
   color: #eaebf0;
 }
 
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
-  }
-}
-
 #titre {
   margin-left: 5px;
 }
@@ -1148,4 +1141,19 @@ section {
 #logo
 {
   width: 130px;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+#footer .copyright {
+  margin-left: -18px;
+  text-align: center;
+  }
 }
