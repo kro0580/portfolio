@@ -1103,7 +1103,7 @@ section {
   padding-bottom: 5px;
 }
 
-#icone_download {
+#icone_download, #icone_download1, #icone_download2, #icone_download3, #icone_download4  {
   margin-right: 5px; 
   color: #35a3d6;
 }
@@ -1136,6 +1136,36 @@ section {
   padding-top: 5px; 
   padding-bottom: 5px;
   font-size: 15px;
+}
+
+#button_prg_dwwm 
+{
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#button_prg_cda 
+{
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#button_prg_master
+{
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 #logo
