@@ -1124,6 +1124,15 @@ section {
   color: #35a3d6;
 }
 
+#button_diplome_cda 
+{
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
 #button_diplome_web 
 {
   padding-left: 15px; 
