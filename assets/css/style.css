@@ -593,6 +593,10 @@ section {
   bottom: 0;
 }
 
+#capture_mockup {
+  height: 209px;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1050,6 +1054,23 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+#button_gif {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#button_gif:hover {
+  background-color: RoyalBlue;
+}
+
+#icone_gif {
+  color: white;
 }
 
 @media (max-width: 768px) {
