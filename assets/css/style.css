@@ -513,7 +513,8 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  /*J'ai changé le padding : avant c'était padding: 10px 15px 8px 15px */
+  padding: 10px 5px 8px 5px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
