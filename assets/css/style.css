@@ -878,7 +878,7 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
+  -webkit-anbxtion: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 
