@@ -30,8 +30,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Google Captcha -->
-  <title>reCAPTCHA demo: Simple page</title>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!--<title>reCAPTCHA demo: Simple page</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
 
 </head>
 
@@ -1010,36 +1010,36 @@
           </div>
                 
           <div class="col-lg-6 d-flex align-items-stretch">
-            <form action="https://formspree.io/f/myzrzvvp" method="POST" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/myzrzvvp" method="POST">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Votre nom</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label for="name">Votre nom :</label>
+                  <input type="text" required placeholder="POTELLE" ="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" pattern="[a-zA-Z]+" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Votre prénom</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label for="name">Votre prénom :</label>
+                  <input type="text" required placeholder="Caroline" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" pattern="[a-zA-Z]+" />
                   <div class="validate"></div>
                 </div>
-                <div class="form-group">
-                  <label for="name">Votre Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                <div style="margin-top: 40px;" class="form-group">
+                  <label for="name">Votre email :</label>
+                  <input type="email" required placeholder="cpotelle@yahoo.fr" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                   <div class="validate"></div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="name">Sujet</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" />
+              <div style="margin-top: 40px;" class="form-group">
+                <label for="name">Sujet :</label>
+                <input type="text" required placeholder="Sujet" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" />
                 <div class="validate"></div>
               </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+              <div style="margin-top: 40px;" class="form-group">
+                <label for="name">Message :</label>
+                <textarea required placeholder="Message" class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="g-recaptcha" data-sitekey="6LdK-xwsAAAAAHmQeHKlBGlQnl-lXvPDGE4yvPss"></div>
-              <div class="text-center">
+              <!--<div class="g-recaptcha" data-sitekey="6LdK-xwsAAAAAHmQeHKlBGlQnl-lXvPDGE4yvPss"></div>-->
+              <div style="margin-top: 40px;" class="text-center">
                 <input type="submit" value="ENVOYER">
               </div>
             </form>
@@ -1092,18 +1092,13 @@
       <span class="cookie-icon">🍪</span>
       <strong>Cookies</strong>
     </div>
-
-    <p>
-      Ce site utilise des cookies pour améliorer votre expérience.
-    </p>
-
+    <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
     <div class="cookie-actions">
       <button class="btn ghost" id="refuseCookies">Refuser</button>
       <button class="btn primary" id="acceptCookies">Accepter</button>
     </div>
   </div>
 </div>
-
 
 <!--<div id="cookie-banner">
   <p>Nous utilisons des cookies pour améliorer votre expérience sur le site.</p>
