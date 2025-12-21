@@ -968,7 +968,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Behance</h2>
-        <p>Envie d'en découvrir davantage ? Rendez-vous sur mon profil Behance.Vous y trouverez une sélection de projets et de maquettes réalisés lors de mes expériences en UX/UI design. Ce portfolio reflète mon apprentissage, ma curiosité et mon envie de progresser dans la conception d’interfaces claires, fonctionnelles et centrées utilisateur.</p>
+        <p>Envie d'en découvrir davantage ? Rendez-vous sur mon profil Behance. Vous y trouverez une sélection de projets et de maquettes réalisés lors de mes expériences en UX/UI design. Ce portfolio reflète mon apprentissage, ma curiosité et mon envie de progresser dans la conception d’interfaces claires, fonctionnelles et centrées utilisateur.</p>
         <p>Bonne visite !</p><br>
         <a href="https://www.behance.net/caroline-potelle/"><button id="button_diplome_web" type="button"><b>🚀 C'est parti !</b></button></a>
       </div>
@@ -1014,32 +1014,35 @@
             <form action="https://formspree.io/f/myzrzvvp" method="POST">
               <div class="row">
                 <div style="margin-top: 40px;" class="form-group col-md-6">
-                  <label for="name">Votre nom :</label>
+                  <label for="name">Votre nom * :</label>
                   <input type="text" required placeholder="POTELLE" ="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" pattern="[a-zA-Z]+" />
                   <div class="validate"></div>
                 </div>
                 <div style="margin-top: 40px;" class="form-group col-md-6">
-                  <label for="name">Votre prénom :</label>
+                  <label for="name">Votre prénom * :</label>
                   <input type="text" required placeholder="Caroline" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" pattern="[a-zA-Z]+" />
                   <div class="validate"></div>
                 </div>
                 <div style="margin-top: 40px;" class="form-group">
-                  <label for="name">Votre email :</label>
+                  <label for="name">Votre email * :</label>
                   <input type="email" required placeholder="cpotelle@yahoo.fr" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div style="margin-top: 40px;" class="form-group">
-                <label for="name">Sujet :</label>
+                <label for="name">Sujet * :</label>
                 <input type="text" required placeholder="Sujet" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div style="margin-top: 40px;" class="form-group">
-                <label for="name">Message :</label>
+                <label for="name">Message * :</label>
                 <textarea required placeholder="Message" class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
+              <!-- Cpatcha Cloudflare Turnstile -->
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACH5bl2FRFemcfcn"></div>
               <!--<div class="g-recaptcha" data-sitekey="6Lc24jAsAAAAAIpZ3BBgc7TkOX9UrK5UXOayd6w6"></div>-->
+              <div style="font-size: 12px;">Les champs précédés d'une étoile * sont obligatoires</div>
               <div style="margin-top: 40px;" class="text-center">
                 <input type="submit" value="ENVOYER">
               </div>
@@ -1126,6 +1129,9 @@
     document.getElementById("cookie-consent").classList.remove("show");
   };
 </script>
+
+<!-- Cpatcha Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <!--<script>
   // Afficher la bannière si le cookie n'existe pas
