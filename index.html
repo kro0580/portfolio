@@ -29,9 +29,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Cpatcha Cloudflare Turnstile -->
-  <link rel="preconnect" href="https://challenges.cloudflare.com">
-
   <!-- Google Captcha -->
   <!--<title>reCAPTCHA demo: Simple page</title>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
@@ -1042,18 +1039,12 @@
                 <textarea required placeholder="Message" class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
-              <!-- Cpatcha Cloudflare Turnstile -->
-              <!--<div class="cf-turnstile" data-sitekey="0x4AAAAAACH5bl2FRFemcfcn"></div>-->
-              <div
-              class="cf-turnstile"
-              data-sitekey="0x4AAAAAACH5bl2FRFemcfcn"
-              data-theme="light"
-              data-size="normal"
-              data-callback="onSuccess"
-              ></div>
-              <!--<div class="g-recaptcha" data-sitekey="6Lc24jAsAAAAAIpZ3BBgc7TkOX9UrK5UXOayd6w6"></div>-->
               <div style="font-size: 12px;">Les champs précédés d'une étoile * sont obligatoires</div>
-              <div style="margin-top: 40px;" class="text-center">
+              <!-- Captcha Cloudflare Turnstile -->
+              <div class="cf-turnstile" style="margin-top: 20px; margin-bottom: 20px;" data-sitekey="0x4AAAAAACH5bl2FRFemcfcn"></div>
+              <!-- Captcha Google -->
+              <!--<div class="g-recaptcha" data-sitekey="6Lc24jAsAAAAAIpZ3BBgc7TkOX9UrK5UXOayd6w6"></div>-->
+              <div class="text-center">
                 <input type="submit" value="ENVOYER">
               </div>
             </form>
@@ -1142,13 +1133,6 @@
 
 <!-- Cpatcha Cloudflare Turnstile -->
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-<script>const widgetId = turnstile.render("#turnstile-container", {
-  sitekey: "0x4AAAAAACH5bl2FRFemcfcn",
-  callback: function (token) {
-    console.log("Success:", token);
-  },
-});
-</script>
 
 <!--<script>
   // Afficher la bannière si le cookie n'existe pas
