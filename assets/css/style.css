@@ -341,6 +341,15 @@ section {
   margin-bottom: 0;
 }
 
+#img_profile {
+  width: 40%;
+  height: 40%;
+}
+
+#style {
+  text-align: justify;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -593,10 +602,6 @@ section {
   opacity: 1;
   bottom: 0;
 }
-
-/* #capture_mockup {
-  height: 209px;
-} */
 
 /*--------------------------------------------------------------
 # Services
@@ -916,6 +921,20 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
+}
+
+#formspree {
+  margin-top: 40px;
+}
+
+#turnstile {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#captcha {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @-webkit-keyframes animate-loading {
