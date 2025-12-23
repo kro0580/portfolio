@@ -923,6 +923,20 @@ section {
   background: #37b3ed;
 }
 
+#formspree {
+  margin-top: 40px;
+}
+
+#turnstile {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#captcha {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
