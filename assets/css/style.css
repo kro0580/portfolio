@@ -932,11 +932,6 @@ section {
   margin-top: 5px;
 }
 
-#captcha {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
