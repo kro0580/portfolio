@@ -370,9 +370,11 @@
               <textarea required placeholder="Message" class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
               <div class="validate"></div>
             </div>
-            <div style="font-size: 12px; margin-top: 5px;">Les champs précédés d'une étoile * sont obligatoires</div>
+            <div id="formulaire">Les champs précédés d'une étoile * sont obligatoires</div>
             <!-- Captcha Cloudflare Turnstile -->
-            <div class="cf-turnstile" style="margin-top: 10px; margin-bottom: 10px;" data-sitekey="0x4AAAAAACH5bl2FRFemcfcn"></div>
+            <div id="turnstile">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAACH5bl2FRFemcfcn"></div>
+            </div>
             <div class="text-center">
               <input type="submit" value="ENVOYER">
             </div>
